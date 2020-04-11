@@ -1,0 +1,14 @@
+<h3>The Responsive Design is used to accommodate different devices for html files. 
+When we finshed a design of html, we need to consider that what if our project were displayed on a different devices, such as phone and watch.
+The format on the phone is not friendly if we didn't apply it. 
+So, making content adaptable across devices is an essential consideration. And that is the purpose of responsive design.
+In following paragraphs, I will explain how did it.
+First, in the header of the code, add a line of the viewport meta tag(see below).
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+Viewport is the default width and height of the page. The above line of code means that the page width by default is equal to the screen width (width= devy-width) and the initial scale (initial-scale=1) is 1.0, which means that the page's initial size accounts for 100% of the screen area.
+Because web pages are laid out according to the width of the screen, you can't use a layout with absolute width, and you can't use elements with absolute value.This rule is very important.
+Specifically, CSS code cannot specify pixel width(width: XX px;).
+The second point is fluid grid, which means the position of each block is floating, not fixed.
+The advantage of float is that if the width is too small to fit two elements, the next element will automatically scroll below the previous one, instead of overflow horizontally, avoiding the horizontal scroll bar. Besides, notice the using of absolute position.
+Meanwhile, you can also choose to apply different CSS rules according to different screen resolutions in the same CSS file.
+That is all my thinking when I design it. </h3>
